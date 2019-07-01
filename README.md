@@ -3,8 +3,8 @@
 Additional package for the crazyswarm project for saving the specified log-variables from the crazyflies into CSV files
 
 ## Installation & Usage
-   1. Load your crazyswarm project or the latest original from the [USC-ACTLab](https://github.com/USC-ACTLab/crazyswarm)
-   2. Add as submodule to your crazyswarm project into the folder `ros_ws/src/`:  
+   1. Load your crazyswarm project or the latest version from the [USC-ACTLab](https://github.com/USC-ACTLab/crazyswarm)
+   2. Execute following command in the crazyswarm project directory to add `cf_logging` as submodule to the project into the folder `ros_ws/src/`:  
       `git submodule add https://github.com/PDfork/cf_logging ros_ws/src/cf_logging`
    3. Edit the `ros_ws/src/crazyswarm/launch/hover_swarm.launch` file and make sure, following lines are present and uncommented:  
       ```
