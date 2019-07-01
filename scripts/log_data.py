@@ -19,7 +19,7 @@ from crazyflie_driver.msg import GenericLogData
 # values: [0.0, 0.0, 0.0, 0.0]
 
 CrazyswarmDir = os.path.dirname(os.path.realpath(__file__)) + "/../../crazyswarm"
-LogDir = CrazyswarmDir + "/scripts/log"
+LogDir = os.path.dirname(os.path.realpath(__file__)) + "/data"
 LogFiles = []
 now = datetime.datetime.now()
 
