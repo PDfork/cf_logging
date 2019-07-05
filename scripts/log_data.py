@@ -42,7 +42,7 @@ def mf_callbacks(*collection):
 			with open(LogFiles[k], 'aw') as csvFile:
 				writer = csv.writer(csvFile)
 				writer.writerow(row)
-				rospy.loginfo(row)
+				# rospy.loginfo(row)
 			row = []
 			k = k + 1
 
