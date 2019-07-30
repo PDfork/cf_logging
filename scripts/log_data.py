@@ -80,8 +80,8 @@ if __name__ == '__main__':
 	rospy.init_node('log_data', anonymous=False)
 	# rospy.Subscriber(ROS_TOPIC, GenericLogData, ros_callback)
 	dt = rospy.get_param('/crazyswarm_server/genericLogTopicFrequencies') # ms
-	dt = dt[0] * 1e-3 # s
-	ts = message_filters.ApproximateTimeSynchronizer(subscriber, 10, 2.0/dt, allow_headerless=False)
+	dt = dt[0] * 1e-2 # s
+	ts = message_filters.ApproximateTimeSynchronizer(subscriber, 10, 3.0*dt, allow_headerless=False)
 	# ts = message_filters.TimeSynchronizer(subscriber, 15)
 	ts.registerCallback(mf_callbacks)
 	rospy.spin()
